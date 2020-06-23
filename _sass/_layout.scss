@@ -16,7 +16,6 @@ $desktop: $b1;
 html, body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
 ol.default {
@@ -85,11 +84,13 @@ pre code.hljs {
 .site-header-container, .post-header-container {
 	width: 100%;
 	text-align: center;
+
 	&.has-cover {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
 		background-position: 50% 50%;
 		background-size: cover;
+		background-repeat: no-repeat;
 		.title {
 			font-size: modular-scale(6);
 		}
@@ -113,7 +114,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px $highlight-color;
+	// box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
 	// Remove this to make header scrollable again
@@ -150,7 +151,7 @@ pre code.hljs {
     	padding-left: $em-base;
     }
     img {
-      max-height: 2.5em;
+      max-height: 3em;
       margin-top: 0.75em;
       padding-right: 1em;
     }
@@ -257,7 +258,8 @@ pre code.hljs {
 	.site-header-container {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
-		background-color: $highlight-color;
+		background-color: white;
+		// background-color: $highlight-color;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
@@ -374,7 +376,7 @@ pre code.hljs {
 .site-footer {
 	$link-color: $white;
 	padding: 1em 1em 2em 1em;
-	background-color: $highlight-color;
+	// background-color: $highlight-color;
 	color: $white;
 	a {
 	  color: $link-color;
